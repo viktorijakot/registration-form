@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<style>
+    body {
+        margin: 0;
+        background-color: #08080B;
+        background-image: url(BlendGroup1.png);
+        background-position: left bottom;
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+
+    * {
+        border: 0;
+    }
+
+    .container {
+        width: 70%;
+        background-color: #242424;
+        margin-left: auto;
+        display: flex;
+        justify-content: center;
+        border-left: 2px solid #7F7F7F;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .white {
+        color: white;
+
+    }
+
+    .about {
+        width: 450px;
+        color: #7F7F7F;
+        font-size: 18px;
+    }
+
+    form {
+        margin-top: 40px;
+        border-bottom: 0.5px solid #7F7F7F;
+        padding-bottom: 50px;
+    }
+
+    input {
+        outline: none;
+        background-color: #242424;
+        border: 0.5px solid #7F7F7F;
+        border-radius: 3px;
+        width: 500px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    form div {
+        margin-top: 20px;
+    }
+
+    .blue {
+        border: 0.5px solid #4B72C2;
+    }
+
+    button {
+        width: 200px;
+        height: 48px;
+        background-color: #4B72C2;
+        color: white;
+        border-radius: 3px;
+        margin-top: 20px;
+        cursor: pointer;
+    }
+
+    button:hover,
+    span:hover {
+        font-size: larger;
+
+    }
+
+    .bottom-text {
+        color: #7F7F7F;
+    }
+
+    .blue2 {
+        color: #4B72C2;
+        cursor: pointer;
+    }
+
+    svg {
+        margin-bottom: -2px;
+        margin-left: 2px;
+    }
+.box3 {
+    display: block;
+    position: relative;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    color:#7F7F7F;
+    padding-left: 35px;
+    cursor: pointer;
+    
+}
+.box3 input {
+    position: absolute;
+    height: 0;
+    width: 0;
+    opacity: 0;
+}
+.checkmark {
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    background-color:#242424;
+    border-radius: 3px;
+    border: 0.5px solid #7F7F7F;
+    left:0;
+}
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.box3 input:checked ~ .checkmark:after {
+  display: block;
+}
+.box3 .checkmark:after {
+  color: solid #4B72C2;
+content: "✓";
+}
+
+
+.password {
+    padding-top: 10px;
+}
+</style>
+
+<body>
+    <div class="container">
+
+        <div class="box">
+            <h1 class="white">Set up your account</h1>
+            <p class="about">Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry.</p>
+            <form>
+                <div><input class="white" type="text" value="VJ" required></div>
+                <div><input class="white blue" type="text" value="Rathod" required></div>
+                <div><input class="white" type="email" placeholder="Email Address" required></div>
+                <div><input class="white" type="password" placeholder="Password" required></div>
+                <div><input class="white" type="password" placeholder="Confirm Password"required></div>
+                <div class="password">
+                    <label class="box3">
+                        <input type="checkbox" class="checked"> <span class="password">Confirm Password</span>
+                        <span class="checkmark blue2"></span>
+                    </label>
+                </div>
+                <div class="white"><button>Continue</button></div>
+            </form>
+            <p class="bottom-text">Already have an account?
+                <span class="blue2">Sign in
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 7H13" stroke="#4B72C2" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M7.75 1.75L13 7L7.75 12.25" stroke="#4B72C2" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </span>
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
